@@ -6,7 +6,7 @@
 /*   By: cviegas <cviegas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 09:41:46 by cviegas           #+#    #+#             */
-/*   Updated: 2024/02/22 13:21:30 by cviegas          ###   ########.fr       */
+/*   Updated: 2024/02/22 13:54:45 by cviegas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 # define W_WIDTH 1920
 # define W_HEIGHT 1080
 # define TILE_SIZE 100
-# define NU NULL`
+# define NU NULL
 # define STDERR STDERR_FILENO
 # define FAIL EXIT_FAILURE
 # define SUCCESS EXIT_SUCCESS
