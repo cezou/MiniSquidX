@@ -6,7 +6,7 @@
 /*   By: cviegas <cviegas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 09:41:46 by cviegas           #+#    #+#             */
-/*   Updated: 2024/02/22 13:54:45 by cviegas          ###   ########.fr       */
+/*   Updated: 2024/02/22 13:57:32 by cviegas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -158,6 +158,7 @@ typedef struct s_game
 /* Game Handling */
 
 void			free_game(t_game *g);
+int				exit_game(t_game *g);
 int				clean_and_exit_game(t_game *g, bool fail);
 
 /* Map Handling */

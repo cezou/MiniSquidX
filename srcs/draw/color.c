@@ -6,7 +6,7 @@
 /*   By: cviegas <cviegas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 18:28:32 by cviegas           #+#    #+#             */
-/*   Updated: 2024/02/22 10:03:08 by cviegas          ###   ########.fr       */
+/*   Updated: 2024/02/22 13:51:54 by cviegas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ void	put_pixel(int color, int x, int y, t_game *g)
 // Draw a TILE_SIZE colored square
 void	put_square(int color, int x, int y, t_game *g)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	while (i < TILE_SIZE)

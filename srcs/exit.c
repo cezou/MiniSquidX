@@ -6,7 +6,7 @@
 /*   By: cviegas <cviegas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 17:40:31 by cviegas           #+#    #+#             */
-/*   Updated: 2024/02/22 10:42:42 by cviegas          ###   ########.fr       */
+/*   Updated: 2024/02/22 13:51:44 by cviegas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ static void	destroy_spr(t_game *g)
 	free_img(&g->draw.spr->cage, g->mlx);
 	p_free(g->draw.spr);
 }
+
 void	free_game(t_game *g)
 {
 	destroy_spr(g);

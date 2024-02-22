@@ -3,7 +3,7 @@ NAME = minisquidx.a
 
 # COMPILATION
 CC = cc 
-CFLAGS = -Wall -Wextra -Werror -g
+CFLAGS = -g
 MLXFLAGS = -I/usr/include -Imlx_linux -O3 -lXext -lX11 -lm
 
 # DIRECTORIES
@@ -55,6 +55,10 @@ $(MLX):
 
 $(NAME): $(MLX)
 	@cp $(MLX) $(NAME) ; \
+	cp $(LIBFT) . ; \
+	ar x $(LIBFT) ; \
+	ar rcs $(NAME) *.o > /dev/null 2>&1; \
+	rm -f *.o libft.a; \
 	echo "$(PINK)Squiding...$(RESET)" ; \
 	for file in $(SRCS); do \
 		$(CC) $(CFLAGS) -c $$file -o $${file%.c}.o -I. ; \
@@ -76,6 +80,7 @@ fclean: clean
 	@rm -f $(NAME);
 
 rmf :
+	@rm -f $(NAME)
 	@rm -rf $(L_DIR)
 	@rm -rf $(D_MLX)
 
